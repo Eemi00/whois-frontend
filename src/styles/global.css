@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(120% 120% at 18% 20%, rgba(143, 123, 255, 0.10), transparent 38%),
+        radial-gradient(110% 110% at 82% 8%, rgba(45, 226, 230, 0.10), transparent 40%),
+        linear-gradient(180deg, #050608 0%, #040507 100%);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: min(1200px, 92vw);
+    margin: 0 auto;
+}
