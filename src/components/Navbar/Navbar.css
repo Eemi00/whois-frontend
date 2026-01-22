@@ -11,11 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: clamp(14px, 2vw, 18px) 0;
 }
 
 .nav-logo {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -24,4 +24,30 @@
 
 .nav-logo span {
     color: var(--accent-2);
+}
+
+.nav-links {
+    display: flex;
+    gap: clamp(12px, 2vw, 18px);
+}
+
+.nav-link {
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: var(--transition-strong);
+    color: var(--muted);
+}
+
+.nav-link:hover {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.08);
+    background: var(--panel);
+}
+
+.nav-link.active {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(120deg, rgba(143, 123, 255, 0.2), rgba(45, 226, 230, 0.15));
+    box-shadow: var(--glow);
 }
