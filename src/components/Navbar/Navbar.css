@@ -37,6 +37,7 @@
     border: 1px solid transparent;
     transition: var(--transition-strong);
     color: var(--muted);
+    text-decoration: none;
 }
 
 .nav-link:hover {
