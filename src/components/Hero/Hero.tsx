@@ -9,10 +9,10 @@ export const Hero: React.FC<HeroProps> = ({ children }) => {
         <section className="hero">
             <div className="hero-bg"></div>
             <h1 className="hero-title">
-                Search <span className="hero-accent">Domains</span>
+                Hae <span className="hero-accent">Domaintietoja</span>
             </h1>
             <p className="hero-subtitle">
-                Get instant WHOIS data, registration status, and expiration dates for any TLD.
+                Saat välittömästi WhoIs datan, rekisteröinnin tilan, ja minkä tähänsä TLDn voimassaolopäivät.
             </p>
             {children}
         </section>

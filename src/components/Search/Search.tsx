@@ -13,7 +13,7 @@ export const Search: React.FC<SearchProps> = ({ value, onChange, onSearch, loadi
             <input
                 type="text"
                 className="search-input"
-                placeholder="example.com"
+                placeholder="eemille.fi"
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && onSearch()}
@@ -23,7 +23,7 @@ export const Search: React.FC<SearchProps> = ({ value, onChange, onSearch, loadi
                 onClick={onSearch}
                 disabled={loading}
             >
-                {loading ? "Searching..." : "Check"}
+                {loading ? "Haetaan..." : "Hae"}
             </button>
         </div>
     )

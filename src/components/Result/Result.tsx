@@ -21,9 +21,9 @@ export const Result: React.FC<ResultProps> = ({ data, domain }) => {
             <div className="result-container available-state">
                 <div className="project">
                     <h3 className="hero-title" style={{ fontSize: '2rem' }}>
-                        <span className="hero-accent">{domain}</span> is available!
+                        <span className="hero-accent">{domain}</span> on vapaana!
                     </h3>
-                    <p className="text-muted">This domain is currently not registered.</p>
+                    <p className="text-muted">Tämä domain ei ole tällä hetkellä rekisteröity.</p>
                 </div>
             </div>
         );
@@ -48,22 +48,22 @@ export const Result: React.FC<ResultProps> = ({ data, domain }) => {
             <div className="result-header">
                 <h2 className="section-title">{domain}</h2>
                 <div className={`status-pill ${status?.toLowerCase().includes('ok') ? 'active' : ''}`}>
-                    {status || 'Registered'}
+                    {status || 'Rekisteröity'}
                 </div>
             </div>
 
             {/* Meta Stats - Using your Hero Split style */}
             <div className="hero-split result-meta">
                 <div className="meta-item">
-                    <p className="meta-label">Created</p>
+                    <p className="meta-label">Rekisteröity</p>
                     <p className="meta-value">{created || 'N/A'}</p>
                 </div>
                 <div className="meta-item">
-                    <p className="meta-label">Expires</p>
+                    <p className="meta-label">Vanhenee</p>
                     <p className="meta-value" style={{ color: 'var(--accent-2)' }}>{expires || 'N/A'}</p>
                 </div>
                 <div className="meta-item">
-                    <p className="meta-label">Last Updated</p>
+                    <p className="meta-label">Viimeksi päivitetty</p>
                     <p className="meta-value">{updated || 'N/A'}</p>
                 </div>
             </div>
